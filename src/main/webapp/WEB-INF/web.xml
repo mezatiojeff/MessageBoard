@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+
+  <servlet>
+    <servlet-name>AddMessageServlet</servlet-name>
+    <servlet-class>AddMessageServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddMessageServlet</servlet-name>
+    <url-pattern>/addMessage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AddReplyServlet</servlet-name>
+    <servlet-class>AddReplyServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddReplyServlet</servlet-name>
+    <url-pattern>/addReply</url-pattern>
+  </servlet-mapping>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteMessageServlet</servlet-name>
+    <servlet-class>DeleteMessageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteMessageServlet</servlet-name>
+    <url-pattern>/deleteMessage</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteReplyServlet</servlet-name>
+    <servlet-class>DeleteReplyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteReplyServlet</servlet-name>
+    <url-pattern>/deleteReply</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+</web-app>
